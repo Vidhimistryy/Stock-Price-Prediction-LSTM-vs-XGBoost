@@ -35,10 +35,6 @@ Replace `"RELIANCE.NS"` with any valid NSE or US ticker.
 
 ---
 
-# Code
-https://colab.research.google.com/drive/1KbMtRRCUp1K3daSw7SgDaAjAyLxQ_zdq#scrollTo=LgK-sUeFfn6L&line=14&uniqifier=1
----
-
 # How to Run
 
 1. **Clone the repository:**
