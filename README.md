@@ -36,7 +36,6 @@ Replace `"RELIANCE.NS"` with any valid NSE or US ticker.
 ---
 
 # Output Sample
-
 ---
 
 # How to Run
