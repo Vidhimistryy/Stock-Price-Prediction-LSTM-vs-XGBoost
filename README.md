@@ -10,7 +10,7 @@ This project builds an LSTM neural network to predict stock prices using histori
 - XGBoost (Gradient Boosted Trees)  
 - yFinance (Yahoo Finance API)  
 - NumPy, Pandas, Matplotlib  
-- Google Colab
+- Google Colab, Jupyter
 
 ---
 # Dataset
@@ -35,7 +35,8 @@ Replace `"RELIANCE.NS"` with any valid NSE or US ticker.
 
 ---
 
-# Output Sample
+# Code
+https://colab.research.google.com/drive/1KbMtRRCUp1K3daSw7SgDaAjAyLxQ_zdq#scrollTo=LgK-sUeFfn6L&line=14&uniqifier=1
 ---
 
 # How to Run
