@@ -37,11 +37,6 @@ Replace `"RELIANCE.NS"` with any valid NSE or US ticker.
 
 # Output Sample
 
-> 📷 Screenshot of actual vs predicted prices
-
-![Stock Price Prediction Graph](images/output_plot.png)  
-*Actual vs Predicted Stock Prices using LSTM and XGBoost*
-
 ---
 
 # How to Run
