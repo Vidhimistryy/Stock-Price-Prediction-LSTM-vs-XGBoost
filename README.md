@@ -1,60 +1,15 @@
-# Stock Price Prediction LSTM vs XGBoost
-This project builds an LSTM neural network to predict stock prices using historical data fetched via Yahoo Finance. It is trained on daily closing prices and visualizes future trends.
+# Stock Price Prediction: LSTM vs XGBoost
 
----
+A comparative time-series modeling study using historical market data, an LSTM neural network, and an XGBoost regressor. The goal is to make the modeling choices and limitations visible while comparing two different approaches to a forecasting problem.
 
-# Tech Stack
+## What the notebook demonstrates
 
-- Python  
-- TensorFlow / Keras (LSTM)  
-- XGBoost (Gradient Boosted Trees)  
-- yFinance (Yahoo Finance API)  
-- NumPy, Pandas, Matplotlib  
-- Google Colab, Jupyter
+The experiment downloads historical data with `yfinance`, prepares sequences for an LSTM, creates an XGBoost regression workflow, evaluates predictions with error metrics, and visualizes the comparison. Tickers can be adapted for NSE or US markets after checking data availability and provider terms.
 
----
-# Dataset
+## Reproducibility notes
 
-Historical stock price data is fetched using `yfinance`. Example:
+Forecasting results depend on the date range, ticker, data adjustments, feature engineering, random seeds, lookback window, and train/test design. Avoid random splits for time-series evaluation and document every experiment configuration before comparing models.
 
-```python
-data = yf.download("RELIANCE.NS", start="2015-01-01", end="2024-12-31")
-```
+## Responsible-use disclaimer
 
-Replace `"RELIANCE.NS"` with any valid NSE or US ticker.
-
----
-
-# Features
-
-- Download and preprocess real stock data
-- Normalize and create sequences for LSTM
-- Build and train a 2-layer LSTM model
-- Build and train an XGBoost regressor for comparison
-- Visualize predictions and compare RMSE scores
-
----
-
-# How to Run
-
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/yourusername/stock-price-prediction-lstm.git
-cd stock-price-prediction-lstm
-```
-
-2. **Open the notebook in Google Colab or Jupyter Notebook**
-
-3. **Install the requirements:**
-
-```python
-!pip install yfinance pandas numpy matplotlib scikit-learn keras tensorflow xgboost
-```
-
-4. **Run all cells to generate predictions and plots**
-
----
-# Author
-**Vidhi Mistry**  
-vidhimistry292@gmail.com
+This repository is for educational research. It does not provide investment advice, personalized financial recommendations, trading signals, or guarantees of future returns.
