@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "Financial Intelligence and Risk Analytics Portfolio Project"
+authors:
+  - family-names: Mistry
+    given-names: Vidhi
+    affiliation: Independent researcher
+    orcid: 
+message: "If you use this work, please cite the repository and the underlying data sources."
+license: MIT
+repository-code: "https://github.com/Vidhimistryy/Stock-Price-Prediction-LSTM-vs-XGBoost"
+abstract: "Educational machine-learning research in financial analytics, risk, cybersecurity, or market forecasting."

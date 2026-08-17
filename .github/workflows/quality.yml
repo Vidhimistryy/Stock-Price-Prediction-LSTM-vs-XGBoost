@@ -1,0 +1,33 @@
+name: Quality checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate repository hygiene
+        shell: bash
+        run: |
+          test -f README.md
+          test -f LICENSE || true
+          if grep -RInE 'AKIA[0-9A-Z]{16}|BEGIN (RSA|OPENSSH|EC) PRIVATE KEY|api[_-]?key[[:space:]]*=' --exclude-dir=.git .; then
+            echo 'Potential credential pattern detected.'
+            exit 1
+          fi
+      - name: Compile Python files when present
+        shell: bash
+        run: |
+          files=$(find . -type f -name '*.py' -not -path './.git/*')
+          if [ -n "$files" ]; then python -m compileall -q $files; fi
